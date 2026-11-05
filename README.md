@@ -12,7 +12,4 @@ Exemplo: CIDR 27 → Total: 32 / Salto: 32 / Hosts utilizáveis: 30
 Descobri na prática que o Python resolve a potência antes da subtração. Também percebi que a primeira versão do programa mostrava só o total e esquecia de descontar os endereços de rede e de broadcast.
 
 ## Limitações
-- Para os CIDRs /31 e /32 o resultado não vale (o cálculo dá 0 e -1), e precisaria de um if para tratar esses casos.
-- O programa não valida a entrada: se for digitada uma letra ou uma barra (como /27), ele para com erro.
-- O salto só tem esse significado para as máscaras de /24 a /30; para as outras, o valor mostrado é apenas o total de endereços.
 - O programa não calcula o endereço de rede nem o de broadcast, apenas as quantidades.
